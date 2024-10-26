@@ -460,21 +460,21 @@ Se usa muito para youtube e google maps.
 
 ### Questionário
 
-Para que serve a tag <track>?
+Para que serve a tag ````<track>````?
 Serve para colocar faixas musicais na tag áudio.
 Adiciona controles nos vídeos.
 Adiciona legendas ao seu vídeo.
 Adiciona trechos de musicas sobrepostas nos vídeos.
 Serve para carregar imagens externas no vídeo.
 
-O que o atributo default faz na tag <track>?
+O que o atributo default faz na tag ````<track>````?
 Permite definir qual musica será a padrão ao carregar a página.
 Não tem utilidade.
 Permite abrir um vídeo especifico no chrome.
 Permite definir qual vídeo será o padrão ao carregar a página.
 Permite definir qual legenda é a padrão ao carregar a página.
 
-O que acontece com a imagem se apenas atribuir uma largura (width) na tag <img>?
+O que acontece com a imagem se apenas atribuir uma largura (width) na tag ````<img>````?
 Diminui o tempo de carregamento da imagem.
 Aumentando ou diminuindo vai distorcer toda a imagem, deixando o navegador lento.
 O navegador redimensionará proporcionalmente a imagem, evitando que ela distorça.
@@ -510,10 +510,139 @@ Textos e sons.
 Apenas coisas relacionadas a áudio. Vídeos é cinematografia.
 
 
-9/10
 O que faz o align na tag ````<img>````?
 Permite alinhar as imagens entre o cabeçalho e rodapé do site.
 Alinha a imagem dentro de um texto.
 Deixa a imagem com sombra para delimitar uma distância entre outras imagens.
 Deixa a imagem com borda para alinhar com outras imagens.
 Centraliza a imagem na tela.
+
+## Criando Tabelas
+
+### Sobre Tabelas
+
+Tabelas: São forma de apresentar os dados de forma tabular. Encontro da coluna com a linha, chamamos de celula. 
+Antigamente eram usado tabelas para estruturar o site. 
+
+### Tag table
+
+
+Abaixo temos um exemplo de tabela: 
+
+````html
+    <table summary="Esta tabela se refer a turma a" border="1" width="250" cellspacing="15"  cellpadding="25" align="center">
+        <tr>
+        <td>Nome:</td>
+        <td>Idade: </td>
+    </tr>
+        <td>Diogo</td>
+        <td>17</td>
+    </table>
+````
+- summary: Sinaliza acessibilidade
+- table: Engloba a tabela dentro do escopo
+- tr:  são linhas
+- td: são colunas
+
+### Tag Tr
+
+A tag tr significa a linha da tabela. 
+Agrupa as celulas
+o TR sozinho não faz muita coisa. 
+
+### Tag td e Th
+
+Celulas: São definidas pela tag td
+Cabeçalhos: Definido pela tag th
+
+### tag tbody, thead e tfoot
+
+tbody: englobamos o corpo da tabela.
+thead: Englobamos o cabeçalho.
+tfoot: rodapé.
+
+### Estilizando Tabelas
+
+Fizemos uma experiencia pratica em estilização de tabelas
+
+### Questionário 
+
+O que faz o atributo colspan?
+Não existe este atributo.
+Serve para mesclar no máximo 3 células na horizontal.
+Serve para mesclar células na horizontal.
+Mescla linhas de uma tabela.
+Facilita o acesso a informação pelo javascript.
+
+
+O que faz a tag <tr>?
+Cria uma descrição na tabela para acessibilidade.
+Cria células na tabela.
+Cria legendas na tabela.
+Cria colunas na tabela.
+Cria linhas na tabela.
+
+Para alinhar horizontalmente uma tabela (<table>) no centro da página, utilizamos qual atributo?
+align="mid"
+center="true"
+align="center"
+align="50%"
+align="middle"
+
+O que faz a tag <tbody>?
+Define as linhas que irão compor o rodapé da tabela, deixando-as aparentes.
+Define as linhas que irão compor o cabeçalho da tabela.
+Define um espaço em cinza para aplicar na tabela.
+Define as linhas que irão compor o corpo da tabela.
+Define um espaço em branco para colocar dados aleatórios.
+
+
+6/10
+O que faz a tag <tfoot>?
+Define as linhas que irão compor o corpo da tabela.
+Define um espaço em branco para colocar dados aleatórios.
+Define as linhas que irão compor o rodapé da tabela.
+Define as linhas que irão compor o cabeçalho da tabela.
+Define um espaço em cinza para aplicar na tabela.
+
+O que faz a tag <th>?
+Cria células invisíveis que serão acessadas apenas via javascript.
+Cria células que serão utilizadas exibir informações relevantes.
+Cria células que serão utilizadas para rodapé.
+Não altera em nada na aparência da tabela.
+Cria células que serão utilizadas para cabeçalho.
+
+O que faz a tag <th>?
+Cria células invisíveis que serão acessadas apenas via javascript.
+Cria células que serão utilizadas exibir informações relevantes.
+Cria células que serão utilizadas para rodapé.
+Não altera em nada na aparência da tabela.
+Cria células que serão utilizadas para cabeçalho.
+
+O que faz a tag <thead>?
+Define as linhas que irão compor o rodapé da tabela, deixando-as aparentes.
+Define as linhas que irão compor o cabeçalho da tabela.
+Define as linhas que irão compor o corpo da tabela.
+Define um espaço em branco para colocar dados aleatórios.
+Define um espaço em cinza para aplicar na tabela.
+
+Para que servem tabelas?
+Somente serve quando utilizamos banco de dados.
+Para estruturar dados e mostrá-los de forma tabular. Em linhas e colunas.
+Ao clicar, abre uma planilha do excel.
+Estruturar um website completo.
+Definir a área do cabeçalho e rodapé do site.
+
+Para que servem tabelas?
+Somente serve quando utilizamos banco de dados.
+Para estruturar dados e mostrá-los de forma tabular. Em linhas e colunas.
+Ao clicar, abre uma planilha do excel.
+Estruturar um website completo.
+Definir a área do cabeçalho e rodapé do site.
+
+O que faz o atributo summary?
+Resume os dados da tabela para não precisar exibir nada.
+Renderiza na página todo seu conteúdo permitindo que leitores de tela tenham acesso.
+Permite colocar uma descrição bem ampla sobre os dados da tabela, para ajudar na acessibilidade.
+Permite colocar uma descrição bem curta sobre os dados da tabela, para ajudar na acessibilidade.
+Permite colocar uma descrição bem curta sobre o html, evitar que leitores de tela acessem os dados.

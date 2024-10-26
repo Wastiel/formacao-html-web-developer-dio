@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    <style>
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: gray;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- a tag table somente intitula que a tabela vai estar dentro daquele contexto-->
+    <table summary="Esta tabela se refer a turma a" cellspacing="0" width="250" align="center">
+    <tr>
+        <thead>
+            <th>Nome:</th>
+            <th>Idade: </th>        
+        </thead>
+    </tr>
+    <tbody>    
+            <tr>
+                <td>Diogo</td>
+                <td>17</td>
+            </tr>        
+        
+            <tr>
+                <td>Diogo</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Diogo</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Diogo</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Diogo</td>
+                <td>17</td>
+            </tr>    
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
