@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Especiais</title>
+</head>
+
+
+<input type="text" name="" id="busca"><br>
+<p id="descricao">
+    Os nossos cursos e programas de formação são criados por empresas mais inovadoras do mercado aplicando uma metodologia.
+    Domine as tecnologias utilizadas no mercado e também mergulhe nas atuais tecnologias que impactarão o futuro dos negócios digitais.
+</p>
+
+<script>
+    // Seleciona o campo de entrada e o parágrafo de descrição
+    var searchField = document.getElementById('busca');
+    var descriptionElement = document.getElementById('descricao');
+    var originalText = descriptionElement.innerHTML;
+
+    // Função para marcar a palavra encontrada
+    function highlightText() {
+        var searchText = searchField.value;
+        
+        // Reseta o texto original para buscar novamente
+        descriptionElement.innerHTML = originalText;
+        
+        if (searchText.trim() !== "") {
+            var regex = new RegExp(`(${searchText})`, 'gi');
+            // Substitui o texto encontrado pela versão com <mark> para destacar
+            descriptionElement.innerHTML = originalText.replace(regex, '<mark>$1</mark>');
+        }
+    }
+    // Adiciona um evento de input para ativar a função ao digitar
+    searchField.addEventListener('input', highlightText);
+</script>
+</body>
+</html>

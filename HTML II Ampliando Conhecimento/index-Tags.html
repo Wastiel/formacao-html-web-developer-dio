@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML 5 - Estrutural</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li a {
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 15px 0;
+        }
+        nav ul li a:hover {
+            color: white;
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>Header
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="tel: 55519999999">Telefone</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--
+    main é uma tag principal que não pode ser filha de nem uma outra tag
+    Existe somente um por página
+    As demais tag's podem ser filhas de main.
+    Define o conteudo principal dentro da página
+    Main é uma tag estrutural. 
+    
+    section: Como se fosse uma div, porém a div é genérica. Section entra nos assuntos princiapis
+
+    aside: Quando não é o assunto principal. 
+
+    nav: HTML de navegação
+    -->
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <aside></aside>
+
+        <article><!-- colocar o artigo dentro. Um pode estar dentro de outro --></article>
+
+        <time><!-- Dia especifico , ajuda nos motores de busca--></time>
+
+        <blockquote><!--Citação, também da para apontar para a materia especifica. --></blockquote>
+        <q><!-- citação pequena. Também da para colocar a fonte da citação --></q>
+
+        <figure> <!--Conteiner de imagem. com uma descrição -->></figure>
+        <figcaption></figcaption>
+        <picture><!--Foncciona também em função da imagem --->></picture>
+
+    </main>
+    <footer>
+        <address>R: Das Flores, numero e tals</address>
+    </footer>
+    <section>
+        <header>Header 2</header>
+        <footer>Footer 2</footer>
+    </section>
+</body>
+</html>
